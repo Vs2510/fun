@@ -1,0 +1,139 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('john-towner-JgOeRuGD_Y4-unsplash.jpg'); /* Replace 'your-background-image.jpg' with the actual path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #20b2aa; /* Light Sea Green */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+h1 {
+    color:black; /* Teal */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#question-container {
+    background-color: #40e0d0; /* Turquoise */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#result-container {
+    font-weight: bold;
+    color: #228b22; /* Forest Green */
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color:black;
+}
+
+#name-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #008080; /* Teal */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #008080; /* Teal */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+button:hover {
+    background-color: #007a74; /* Darker Teal */
+}
+/* Radar chart styles */
+#compatibility-chart {
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 128, 128, 0.2); /* Teal color with transparency */
+}
+
+/* Customize the radar chart labels */
+#chart-labels {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.label {
+    font-weight: bold;
+    margin: 0 10px;
+    color: #008080; /* Teal */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+    #question-container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    label {
+        font-size: 1rem;
+    }
+    #name-input {
+        font-size: 0.9rem;
+    }
+    ul li {
+        font-size: 0.9rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+}
